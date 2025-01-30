@@ -6,19 +6,23 @@ Testinium supports java, gauge and cucumber frameworks in selenium projects.
 
 In projects created with **Selenium-Gauge**, what should be in the project;
 
-\-Projects created with selenium-gauge must have unique tags.
+-Projects created with selenium-gauge must have unique tags.
+
+-Scenarios should be written under the spec file.
+
+-Attention should be the versions, our current versions for the gauge version 0.11.1, selenium 3.141.59 and java 23. (pom.xml)
 
 ![](<../.gitbook/assets/image (45).png>)
 
-\-manifest.json file must contain xml report plugin.
+-manifest.json file must contain xml report plugin.
 
 ![](<../.gitbook/assets/image (22).png>)
 
-\-.gitignore file should be project directory.
+-.gitignore file should be project directory.
 
-\-Target file should not be pushed to remote repository
+-Target file should not be pushed to remote repository
 
-\-The hub url must be specified for the remote driver to work.
+-The hub url must be specified for the remote driver to work. ( Where the hub address is changed is the BaseTest area. )
 
 ![](<../.gitbook/assets/image (44).png>)
 
@@ -26,11 +30,13 @@ In projects created with **Selenium-Gauge**, what should be in the project;
 
 In projects created with **Selenium-Java**, what should be in the project;
 
-\-gitignore file should be in project directory.
+-gitignore file should be in project directory.
 
-\-Target file should not be pushed to remote repository
+-Target file should not be pushed to remote repository
 
-\-The hub url must be specified for the remote driver to work.
+-The hub url must be specified for the remote driver to work.
+
+-Versions must be given correctlyin the pom.xml file. ( Java version is 23.)
 
 ![](<../.gitbook/assets/image (44).png>)
 
@@ -38,15 +44,15 @@ In projects created with **Selenium-Java**, what should be in the project;
 
 In projects created with **Selenium-Cucumber**, what should be in the project;
 
-\-Feature files should be under src/resources directory.
+-Feature files should be under src/resources directory.
 
 ![](<../.gitbook/assets/MicrosoftTeams-image (3).png>)
 
-\-gitignore file should be in project directory.
+-gitignore file should be in project directory.
 
-\-Target file should not be pushed to remote repository
+-Target file should not be pushed to remote repository
 
-\-The hub url must be specified for the remote driver to work
+-The hub url must be specified for the remote driver to work
 
 ![](<../.gitbook/assets/image (59).png>)
 
@@ -60,7 +66,7 @@ The repository link of the git account to which the source codes of the project 
 
 A new project is created on the system by clicking the Save button.
 
-![](../.gitbook/assets/sese.jpg)
+![](../.gitbook/assets/image.avif)
 
 Then, the source code of the project should be sent to the link address of the git repository given in the system.
 
@@ -68,11 +74,9 @@ Then, the source code of the project should be sent to the link address of the g
 
 ### Scenario Creation
 
-
-
 Click the create button on the all scenarios screen to create a scenario for the project.
 
-![](../.gitbook/assets/senar.jpg)
+![](../.gitbook/assets/image-2.avif)
 
 **1.Properties**
 
@@ -80,7 +84,7 @@ In order to create a scenario, we must first select the project from the **Selec
 
 We give a name to the **Scenario Name** field for the scenario we will create.
 
-&#x20;**Description** is the field where comments about the Scenario are added.
+**Description** is the field where comments about the Scenario are added.
 
 **Group** is the area where you can group multiple scenarios under one group.
 
@@ -90,7 +94,7 @@ The **Maximum Execution Time** field is for selecting the maximum time the test 
 
 Select Source File is the area where your test files in the given repository are listed.
 
-Allows you to select the test file you want**.**
+Allows you to select the test file you want\*\*.\*\*
 
 **3.Select Test Methods**
 
@@ -102,7 +106,7 @@ The scenario is created by selecting the desired test method or methods.
 
 You can also **select all** your test cases with select all radio button.
 
-![](<../.gitbook/assets/image (15).png>)
+![](../.gitbook/assets/image-3.avif)
 
 It is the screen where the scenario steps in the spec file of the test method you selected are displayed.
 
@@ -120,15 +124,13 @@ A plan should be created for the project and scenario created after the above pr
 
 You can create a new plan by clicking the **create** button on the "**all plan**" screen.
 
-
-
-![](../.gitbook/assets/dendede.jpg)
+![](../.gitbook/assets/image-2.webp)
 
 Relevant fields are filled on the screen that opens.
 
 **1.Properties**
 
-**Select A Project**, **** is the area where the project selection for which the plan is to be created is made.
+**Select A Project**, \*\*\*\* is the area where the project selection for which the plan is to be created is made.
 
 **Plan Name** is the field where you name the created plan.
 

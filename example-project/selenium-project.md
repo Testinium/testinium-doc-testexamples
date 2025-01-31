@@ -1,58 +1,60 @@
 # Selenium Project
 
-Testinium supports java, gauge and cucumber frameworks in selenium projects.
+Testinium supports **Java**, **Gauge**, and **Cucumber** frameworks for Selenium projects.
 
 ### **Selenium-Gauge**
 
-In projects created with **Selenium-Gauge**, what should be in the project;
+For projects created with **Selenium-Gauge**, the following requirements must be met:
 
--Projects created with selenium-gauge must have unique tags.
+-Projects created with Selenium-Gauge must include unique tags to ensure proper test execution and reporting.
 
--Scenarios should be written under the spec file.
+-Test scenarios should be written under the **spec file** to maintain the proper structure.
 
--Attention should be the versions, our current versions for the gauge version 0.11.1, selenium 3.141.59 and java 23. (pom.xml)
+-Ensure alignment with the following versions in the **pom.xml** file; **Gauge**: 0.11.1, **Selenium**: 3.141.59, **Java**: 23
 
 ![](<../.gitbook/assets/image (45).png>)
 
--manifest.json file must contain xml report plugin.
+-**manifest.json file** must contain **Xml Report Plugin.**
 
 ![](<../.gitbook/assets/image (22).png>)
 
--.gitignore file should be project directory.
+-**.gitignore** file should be located in the project directory.
 
--Target file should not be pushed to remote repository
+-**Target** folder should not be pushed to the remote repository.
 
--The hub url must be specified for the remote driver to work. ( Where the hub address is changed is the BaseTest area. )
+-**Hub URL** must be specified for the remote driver to function properly (the hub address can be updated in the **BaseTest** class).
 
 ![](<../.gitbook/assets/image (44).png>)
 
 ### **Selenium-Java**
 
-In projects created with **Selenium-Java**, what should be in the project;
+In projects created with **Selenium-Java**, the following requirements must be met:
 
--gitignore file should be in project directory.
+-**.gitignore** file should be located in the project directory.
 
--Target file should not be pushed to remote repository
+-**Target** folder should not be pushed to the remote repository.
 
--The hub url must be specified for the remote driver to work.
+-**Hub URL** must be specified for the remote driver to function properly.
 
--Versions must be given correctlyin the pom.xml file. ( Java version is 23.)
+-The versions must be correctly specified in the **pom.xml** file (Java version is **23**).
+
+
 
 ![](<../.gitbook/assets/image (44).png>)
 
 ### **Selenium-Cucumber**
 
-In projects created with **Selenium-Cucumber**, what should be in the project;
+In projects created with **Selenium-Cucumber**, the following requirements must be met:
 
--Feature files should be under src/resources directory.
+-Feature files should be placed under the **src/resources** directory.
 
 ![](<../.gitbook/assets/MicrosoftTeams-image (3).png>)
 
--gitignore file should be in project directory.
+-**.gitignore** file should be located in the project directory.
 
--Target file should not be pushed to remote repository
+-**Target** folder should not be pushed to the remote repository.
 
--The hub url must be specified for the remote driver to work
+-**Hub URL** must be specified for the remote driver to function properly.
 
 ![](<../.gitbook/assets/image (59).png>)
 

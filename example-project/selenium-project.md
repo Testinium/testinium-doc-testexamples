@@ -10,7 +10,13 @@ For projects created with **Selenium-Gauge**, the following requirements must be
 
 -Test scenarios should be written under the **spec file** to maintain the proper structure.
 
--Ensure alignment with the following versions in the **pom.xml** file; **Gauge**: 0.11.1, **Selenium**: 3.141.59, **Java**: 23
+-The versions must be correctly specified in the **pom.xml** file;
+
+**Gauge**: 0.11.1
+
+**Selenium**: 3.141.59
+
+**Java**: 23
 
 ![](<../.gitbook/assets/image (45).png>)
 

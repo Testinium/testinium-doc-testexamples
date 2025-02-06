@@ -6,11 +6,9 @@ Testinium supports **Java**, **Gauge**, and **Cucumber** frameworks for Selenium
 
 For projects created with **Selenium-Gauge**, the following requirements must be met:
 
--Projects created with Selenium-Gauge must include unique tags to ensure proper test execution and reporting.
-
--Test scenarios should be written under the **spec file** to maintain the proper structure.
-
--The versions must be correctly specified in the **pom.xml** file;
+* Projects created with Selenium-Gauge must include unique tags to ensure proper test execution and reporting.
+* Test scenarios should be written under the **spec file** to maintain the proper structure.
+* The versions must be correctly specified in the **pom.xml** file;
 
 **Gauge**: 0.11.1
 
@@ -20,15 +18,13 @@ For projects created with **Selenium-Gauge**, the following requirements must be
 
 ![](<../.gitbook/assets/image (45).png>)
 
--**manifest.json file** must contain **Xml Report Plugin.**
+* **manifest.json file** must contain **Xml Report Plugin.**
 
 ![](<../.gitbook/assets/image (22).png>)
 
--**.gitignore** file should be located in the project directory.
-
--**Target** folder should not be pushed to the remote repository.
-
--**Hub URL** must be specified for the remote driver to function properly (the hub address can be updated in the **BaseTest** class).
+* **.gitignore** file should be located in the project directory.
+* **Target** folder should not be pushed to the remote repository.
+* **Hub URL** must be specified for the remote driver to function properly (the hub address can be updated in the **BaseTest** class).
 
 ![](<../.gitbook/assets/image (44).png>)
 
@@ -36,13 +32,10 @@ For projects created with **Selenium-Gauge**, the following requirements must be
 
 In projects created with **Selenium-Java**, the following requirements must be met:
 
--**.gitignore** file should be located in the project directory.
-
--**Target** folder should not be pushed to the remote repository.
-
--**Hub URL** must be specified for the remote driver to function properly.
-
--The versions must be correctly specified in the **pom.xml** file (Java version is **23**).
+* **.gitignore** file should be located in the project directory.
+* **Target** folder should not be pushed to the remote repository.
+* **Hub URL** must be specified for the remote driver to function properly.
+* The versions must be correctly specified in the **pom.xml** file (Java version is **23**).
 
 
 
@@ -52,27 +45,35 @@ In projects created with **Selenium-Java**, the following requirements must be m
 
 In projects created with **Selenium-Cucumber**, the following requirements must be met:
 
--Feature files should be placed under the **src/resources** directory.
+* Feature files should be placed under the **src/resources** directory.
 
 ![](<../.gitbook/assets/MicrosoftTeams-image (3).png>)
 
--**.gitignore** file should be located in the project directory.
-
--**Target** folder should not be pushed to the remote repository.
-
--**Hub URL** must be specified for the remote driver to function properly.
+* **.gitignore** file should be located in the project directory.
+* **Target** folder should not be pushed to the remote repository.
+* **Hub URL** must be specified for the remote driver to function properly.
 
 ![](<../.gitbook/assets/image (59).png>)
 
 ### Project Creation
 
-To create a Selenium project, name the project, select Selenium framework(java-gauge-cucumber). For example, the file type to work with Selenium-gauge is selected.
+To create a Selenium project, follow these steps:
 
-It is indicated on the screen that it will be created as a maven project by default.
+#### **1. Project Name & Framework Selection**
 
-The repository link of the git account to which the source codes of the project will be sent is displayed.
+* Enter a name for the project.
+* Select the **Selenium framework** (e.g., _Java-Gauge-Cucumber_).
+* Choose the appropriate file type for working with Selenium-Gauge.
 
-A new project is created on the system by clicking the Save button.
+#### **2. Project Configuration**
+
+* The system indicates that the project will be created as a **Maven project by default**.
+* The **Git repository link** for storing the project's source code is displayed.
+
+#### **3. Project Creation & Source Code Management**
+
+* Click the **Save** button to create the project in the system.
+* After creation, the source code of the project must be pushed to the **provided Git repository link**.
 
 ![](../.gitbook/assets/image.avif)
 
@@ -82,90 +83,100 @@ Then, the source code of the project should be sent to the link address of the g
 
 ### Scenario Creation
 
-Click the create button on the all scenarios screen to create a scenario for the project.
+#### **1. Click the Create Button**
+
+On the **All Scenarios** screen, click the **Create** button to begin the scenario creation process.
 
 ![](../.gitbook/assets/image-2.avif)
 
-**1.Properties**
+#### **2. Configure Scenario Properties**
 
-In order to create a scenario, we must first select the project from the **Select A Project** field on the screen that opens.
+In the scenario creation screen, configure the following fields:
 
-We give a name to the **Scenario Name** field for the scenario we will create.
+* **Select a Project:** Choose the project for which you want to create a scenario.
+* **Scenario Name:** Enter a unique name for the scenario.
+* **Description:** Add comments or additional details about the scenario.
+* **Group:** Organize multiple scenarios under a specific group.
+* **Maximum Execution Time:** Define the maximum allowed execution time for the test. If the test exceeds this limit, it will be automatically aborted.
 
-**Description** is the field where comments about the Scenario are added.
+#### **3. Select Source File**
 
-**Group** is the area where you can group multiple scenarios under one group.
+* The **Select Source File** section lists test files available in the repository.
+* Choose the test file that contains the test methods you want to include in the scenario.
 
-The **Maximum Execution Time** field is for selecting the maximum time the test should run. If a test continues to run up to this time limit, it will be aborted.
+#### **4. Select Test Methods**
 
-**2.Select Source File**
+* This section displays the test methods from the selected test file.
+* Select the test method(s) to be included in the scenario.
+* **Create Scenario Group:** Allows selecting multiple test cases within a group.
+* **Select All Option:** Use the "Select All" radio button to include all test cases at once.
 
-Select Source File is the area where your test files in the given repository are listed.
+**Character Validation in Scenario Creation**
 
-Allows you to select the test file you want\*\*.\*\*
+During the scenario creation process, character validation is performed to ensure that only supported characters are used. The system allows characters within the **ASCII range of 32 to 127**, based on the [ASCII Table](https://www.asciitable.com/).
 
-**3.Select Test Methods**
-
-This is the area where your test methods from the given test files are listed.
-
-The scenario is created by selecting the desired test method or methods.
-
-**Create Scenario Group**, allows you to select multiple test cases.
-
-You can also **select all** your test cases with select all radio button.
+If a scenario contains characters outside this range, an error message will be displayed, and the scenario will not be accepted.
 
 ![](../.gitbook/assets/image-3.avif)
 
-It is the screen where the scenario steps in the spec file of the test method you selected are displayed.
+#### 5. File Content
 
-It allows you to make and save the changes and edits you want in the test steps in your scenario.
+* This screen displays the scenario steps from the spec file of the selected test method. It allows you to modify and save changes to the test steps within your scenario.
 
 ![](<../.gitbook/assets/image (51).png>)
 
-You can define necessary system parameters in this area.(Optional) Then you can use these parameters in your test code. Testinium will export these parameters to the system that will run the tests.
+#### 6. Set System Parameters
+
+* In this section, you can define the necessary system parameters (optional). These parameters can be used in your test code, and Testinium will export them to the system where the tests will be executed.
 
 ![](<../.gitbook/assets/image (65).png>)
 
-### Plan Create
+### Plan Creation
 
-A plan should be created for the project and scenario created after the above processes.
+After completing the previous steps, a **plan** should be created for the project and the associated scenario.
 
-You can create a new plan by clicking the **create** button on the "**all plan**" screen.
+* To create a new plan, navigate to the **"All Plans"** screen.
+* Click the **Create** button to define a new plan for your project and scenario.
 
 ![](../.gitbook/assets/image-2.webp)
 
-Relevant fields are filled on the screen that opens.
+#### **1. Properties**
 
-**1.Properties**
+* **Select a Project:** Choose the project for which the plan will be created.
+* **Plan Name:** Enter a name for the newly created plan.
 
-**Select A Project**, \*\*\*\* is the area where the project selection for which the plan is to be created is made.
+#### **2. Scenarios**
 
-**Plan Name** is the field where you name the created plan.
+* Scenarios from the selected project are listed.
+* You can select multiple scenarios to include in the test plan.
 
-**2.Scenarios**
+#### **3. Scenario Order**
 
-Your scenarios are listed from the selected project. This is where you can select multiple scenarios to add a test plan.
+* Arrange the selected scenarios in the desired execution order.
+* Scenarios will be executed sequentially based on the defined order.
 
-**3.Scenario Order**
-
-It allows you to sort among the selected scenarios. Scenarios are executed according to the selected order.
+***
 
 ![](../.gitbook/assets/eded.jpg)
 
-**3.Platform Selection**
+#### **3. Platform Selection**
 
-It offers the opportunity to run your scenarios on the platform you want.
+The Platform Selection step allows you to run your scenarios on the desired platform.
 
-For example, you can select the operating system as windows 10, the browser as chrome and the latest version and run your test on this platform.
-
-You can choose the screen resolution from the options and save all your choices with the add button.
-
-The operating system, environment name, environment version and screen resolution you selected are displayed on the screen.
-
-You can delete the selected operating system, environment name, environment version and screen resolution with the Delete button.You can re-select and add.
-
-With the save button, you can save your transactions and create your plan.
+* **Operating System & Browser Selection:**
+  * Choose an operating system (e.g., Windows 10).
+  * Select a browser (e.g., Chrome) and specify the desired version (e.g., latest version).
+  * Your test will be executed on the selected platform.
+* **Screen Resolution Selection:**
+  * Choose a preferred screen resolution from the available options.
+  * Click the **Add** button to save your selections.
+* **Managing Selected Configurations:**
+  * The **selected operating system, environment name, environment version, and screen resolution** will be displayed on the screen.
+  * Use the **Delete** button to remove any selected configurations.
+  * You can reselect and add new configurations if needed.
+* **Saving the Plan:**
+  * Click the **Save** button to finalize your selections and create the plan.
 
 ![](<../.gitbook/assets/image (2).png>)
 
-After these processes, the project, scenario and plan that you will run in the testinium environment will be created.
+After completing these steps, the project, scenario, and plan will be successfully created in the Testinium, ready for execution.

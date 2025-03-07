@@ -8,19 +8,28 @@ Testinium supports java, gauge and cucumber frameworks in appium projects.
 
 In projects created with **Appium-gauge**, what should be in the project;
 
-\-Projects created with appium-gauge must have unique tags.
+* Projects created with Appium- Gauge must include unique tags to ensure proper test execution and reporting.
+* Test scenarios should be written under the **spec file** to maintain the proper structure.
+* The versions must be correctly specified in the **pom.xml** file;
+*   **Gauge**: 0.11.1
+
+    **Appium**: 7.0.0
+
+    **Java**: 23
 
 ![](<../.gitbook/assets/image (33).png>)
 
-\-manifest.json file must contain xml report.
+-manifest.json file must contain xml report.
+
+-The versions must be correctly specified in the **pom.xml** file (Java version is **23**).
 
 ![](<../.gitbook/assets/image (21).png>)
 
-\-gitignore file should be.
+-gitignore file should be.
 
-\-Target file should not be pushed to remote repository.
+-Target file should not be pushed to remote repository.
 
-\-The hub url must be specified for the remote driver to work.
+-The hub url must be specified for the remote driver to work.
 
 ![](<../.gitbook/assets/image (62).png>)
 
@@ -28,11 +37,13 @@ In projects created with **Appium-gauge**, what should be in the project;
 
 In projects created with **Appium-Java**, what should be in the project
 
-\-gitignore file should be.
+-gitignore file should be.
 
-\-Target file should not be pushed to remote repository
+-Target file should not be pushed to remote repository
 
-\-The hub url must be specified for the remote driver to work.
+-The hub url must be specified for the remote driver to work.
+
+-The versions must be correctly specified in the **pom.xml** file (Java version is **23**).
 
 ![](<../.gitbook/assets/image (27).png>)
 
@@ -40,15 +51,21 @@ In projects created with **Appium-Java**, what should be in the project
 
 In projects created with **Appium-Cucumber**, what should be in the project;
 
-\-Feature files should be under src resources
+-Feature files should be under src resources
+
+
 
 ![](../.gitbook/assets/image.png)
 
-\-gitignore file should be.
+-gitignore file should be.
 
-\-Target file should not be pushed to remote repository .
+-Target file should not be pushed to remote repository .
 
-\-The hub url must be specified for the remote driver to work .
+-The hub url must be specified for the remote driver to work .
+
+**Cucumber**: 7.20.1
+
+**Java**: 23
 
 ![](<../.gitbook/assets/image (59).png>)
 
@@ -60,7 +77,7 @@ The repository link of the git account to which the source codes of the project 
 
 A new project is created on the system by clicking the Save button.
 
-![](../.gitbook/assets/kitaapppppp.jpg)
+![](<../.gitbook/assets/Ekran Resmi 2025-03-07 08.55.58.png>)
 
 Then, the source code of the project should be sent to the link address of the git repository given in the system.
 
@@ -70,7 +87,7 @@ Then, the source code of the project should be sent to the link address of the g
 
 Click the create button on the all scenarios screen to create a scenario for the project.
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/Ekran Resmi 2025-03-07 08.58.58.png>)
 
 **1.Properties**
 
@@ -78,7 +95,7 @@ In order to create a scenario, we must first select the project from the **Selec
 
 We give a name to the **Scenario Name** field for the scenario we will create.
 
-&#x20;**Description** is the field where comments about the Scenario are added.
+**Description** is the field where comments about the Scenario are added.
 
 **Group** is the area where you can group multiple scenarios under one group.
 
@@ -88,7 +105,7 @@ The **Maximum Execution Time** field is for selecting the maximum time the test 
 
 Select Source File is the area where your test files in the given repository are listed.
 
-Allows you to select the test file you want**.**
+Allows you to select the test file you want\*\*.\*\*
 
 **3.Select Test Methods**
 
@@ -124,7 +141,7 @@ Relevant fields are filled on the screen that opens.
 
 **1.Properties**
 
-**Select A Project**, **** is the area where the project selection for which the plan is to be created is made.
+**Select A Project**, \*\*\*\* is the area where the project selection for which the plan is to be created is made.
 
 **Plan Name** is the field where you name the created plan.
 

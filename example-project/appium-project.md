@@ -69,6 +69,8 @@ In projects created with **Appium-Cucumber**, what should be in the project;
 
 ![](<../.gitbook/assets/image (59).png>)
 
+**Project Creation**
+
 To create a Appium project, name the project, select Appium framework(java-gauge-cucumber). For example, the file type to work with Appium-gauge is selected.
 
 It is indicated on the screen that it will be created as a maven project by default.
@@ -117,7 +119,7 @@ The scenario is created by selecting the desired test method or methods.
 
 You can also **select all** your test cases with select all.
 
-![](<../.gitbook/assets/image (64).png>)
+![](<../.gitbook/assets/Ekran Resmi 2025-03-07 09.05.18.png>)
 
 It is the screen where the scenario steps in the spec file of the test method you selected are displayed.
 
@@ -127,7 +129,7 @@ It allows you to make and save the changes and edits you want in the test steps 
 
 You can define necessary system parameters in this area.(Optional) Then you can use these parameters in your test code. Testinium will export these parameters to the system that will run the tests.
 
-![](<../.gitbook/assets/image (63).png>)
+![](<../.gitbook/assets/Ekran Resmi 2025-03-07 09.06.41.png>)
 
 ### Plan Create
 
@@ -135,7 +137,7 @@ A plan should be created for the project and scenario created after the above pr
 
 You can create a new plan by clicking the **create** button on the "**all plan**" screen.
 
-![](<../.gitbook/assets/image (35).png>)
+![](<../.gitbook/assets/Ekran Resmi 2025-03-07 09.13.35.png>)
 
 Relevant fields are filled on the screen that opens.
 
